@@ -8,7 +8,24 @@ article > * {
   grid-column: 2;
   min-width: 0;
 }
-
+.role {
+  display: flex;
+  grid-gap: 10px;
+  grid-column: 1 /-1;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 450px;
+}
+.contact {
+  text-align: center;
+    padding: 50px 50px 5px 50px;
+}
+.note {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.projects {
+  padding: 50px 50px 50px 50px;
+}
 /* General Style */
 
 h1{
@@ -18,16 +35,29 @@ h1{
 h2 {
   font-family: 'Love Ya Like A Sister', sans-serif;
   font-size: 36px;
+  text-align: center;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 .name {
   font-family: 'Poppins', sans-serif;
   font size: 36px;
 }
 
+strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  font-style: medium;
+  font-weight: medium;
+}
+header {
+    padding-bottom: 100px;
 }
 .navmenu {
     font-family: 'Love Ya Like A Sister', sans-serif;
@@ -81,7 +111,7 @@ img {
 /* home */
 
 .slogan {
-  grid-column: 1/2;
+  padding: 50px 100px 50px 100px;
 }
 
 .header {
@@ -95,8 +125,8 @@ img {
   grid-column: 1 /-1;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 450px;
-  padding-bottom: 400px;
-  padding-top: 200px;
+  padding-bottom: 600px;
+  padding-top: 600px;
 }
 
 .orangebox {
@@ -119,11 +149,18 @@ img {
   position: absolute;
   top: 0;
   background-color: #6EBFCC;
+  background-image:linear-gradient(to right, #6EBFCC,#DED871,#9DCCD6);
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax 100px, 1fr));
 }
-
+.ebox {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  display: grid;
+  grid-gap: 5px;
+}
 .second {
   background-image: url(../images/background.jpg);
   height: 100%;
