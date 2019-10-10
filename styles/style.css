@@ -55,6 +55,7 @@ p {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: medium;
+  padding: 20px;
 }
 header {
     padding-bottom: 100px;
@@ -92,6 +93,14 @@ header {
 
 .button {
   display: inline;
+  background-color: #0076FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20px;
 }
 
 html, body {
@@ -161,6 +170,7 @@ img {
   display: grid;
   grid-gap: 5px;
 }
+
 .second {
   background-image: url(../images/background.jpg);
   height: 100%;
