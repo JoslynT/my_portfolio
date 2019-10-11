@@ -6,8 +6,8 @@
   <title> Portfolio | Joslyn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1d2a87e2d8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -56,16 +56,18 @@
   </section>
   <h2 class="subtitle"><span class="flatline"></span>          Overview          <span class="flatline"></span></h2>
   <section class="summary">
-    <article>
-
+    <article class="person">
     <h3>What does E-box do?</h3>
     <p>Being organized is one of the most important key factors to become successful in just about anything you do. Being able to organize anything, anywhere is maybe a superpower? being able to upload, organize share personal files online and
       offline? Yes, please! That's why I was eager and passionate about the process of design along with the development of creating an online storage service.</p>
-    <h3>Problem</h3>
+      <div class="side">
+    <h3 class="lefttext">Problem</h3><br>
     <p>In a highly saturated market already with great usability and experience with organization and collaboration, how might we design a storage system with an emphasis on organization and collaboration that is easy for users to store and showcase
-      content? </p>
-    <h3>Solution</h3>
+      content? </p></div>
+      <div class="side">
+   <h3 class="righttext">Solution</h3><br>
     <p>Bringing in a new perspective. E-box has the fun flexibility of document storage, content creation, visual organization tools, powerful searchability and real-time collaboration available within one intuitive interface. </p>
+  </div>
   </article>
   </section>
 
@@ -82,7 +84,9 @@
       solutions for users who still have frustrations providing a better experience for users. </p>
     <h2 class="subtitle">User Personas</h2>
   </article>
-    <article class="biography">
+  <article class="person">
+    <div class="biography">
+      <img src="images/guy.png" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
       <strong>Biography:</strong>
       <p>Jerry grew up fishing most of his childhood, to this day he finds peace of hearing the sounds of wildlife and running waters. He doesn’t go as often anymore since he now has a newborn child to raise and a lovely wife to take
         care of. He says when his newborn is old enough to walk, he will take him fishing at his favorite spot.</p>
@@ -97,8 +101,9 @@
       <strong> Motivations:</strong>
       <p>Jerry currently uses multiple storage platforms to store his personal and work-related files. He needs to create and access his files on his devices as he always needs to access his files where ever he is. Jerry is a very organized
         individual and needs all his files to be the same. Sometimes frustration occurs with the process of searching for his files.</p>
-    </article>
-    <article class="biography">
+    </div>
+    <div class="biography">
+      <img src="images/girl.png" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
       <strong>Biography:</strong>
       <p>Fiona’s dream is to travel the world. In the meantime, while she attends her state college for a degree in culinary, she takes her of her 3 kittens. Her life is busy as it gets for a student. Waking up early to prepare for the day, attending
         her classes and studying at night. To support herself she creates cooking tutorials on social media.</p>
@@ -113,14 +118,17 @@
       <strong> Motivations:</strong>
       <p> Fiona has many recipes to try to memorize, originally everything was written down. Now she has her files on the cloud, which makes her life easier because she can simply open her tablet in the kitchen and start cooking instead of walking
         every looking for her papers. She is always on the look for new recipes and when she finds one online she likes to save the link to the cloud. </p>
-    </article>
-
+    </div>
+  </article>
   </section>
   <section class="analysis">
   <article class="competitive">
     <h2 class="subtitle">Competitive Analysis</h2>
     <p>Given the number of existing productivity services, I only focused my analysis on cloud storage heavyweights like Dropbox, Google Drive, and office Online. I needed to take a closer look at potential competitors to identify mainly possible
       opportunities I could take and how our product could provide the most value to our users. Overall, these insights into how I should go about creating and marketing. </p>
+   </article>
+   <article class="person">
+      <div class="ca">
       <strong>Strengths:</strong>
       <p>High user base
         Multi-language support<br>
@@ -142,8 +150,8 @@
         Changes in consumer tastes<br>
         Availability of substitute products<br>
         Security and privacy issues </p>
-    </article>
-    <article class="competitive">
+      </div>
+    <div class="ca">
       <strong>Strengths:</strong>
       <p>Integration/API<br>
         Collaboration<br>
@@ -163,8 +171,8 @@
       <strong> Threats: </strong>
       <p>Intense Competition<br>
         Need rapid updates of functionality </p>
-    </article>
-    <article class="competitive">
+    </div>
+    <div class="ca">
       <strong>Strengths:</strong>
       <p>Professional quality control over docs<br>
         Integration (Dropbox) </p>
@@ -182,11 +190,12 @@
       <p>Difficult to choose this software over other well-known applications<br>
         Security and privacy issues<br>
         Intense competition </p>
-    </article>
+    </div>
+  </article>
   </section>
   <section class="information">
+     <article>
     <h2 class="subtitle">Information Archiecture</h2>
-    <article>
     <h3> User Stories and Flows</h3>
     <p>With previous research in mind, one of the easiest ways to start the design of the smoothest paths for adding content, searching for specific items, and managing accounts. All the while having an MVP. </p>
     </article>
@@ -286,30 +295,31 @@
   <footer>
     <h2 class="subtitle">Get In Touch!</h2>
     <p class="note"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
-
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/joslyn-tran-5a5674139">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/JoslynT">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/Mushishi97">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="Joslyn:iceboxjo@gmail.com">
-          <i class="fa fa-envelope-square" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
+    <div class="socialsecond">
+     <ul>
+       <li>
+         <a href="https://www.linkedin.com/in/joslyn-tran-5a5674139">
+         <i class="fab fa-linkedin fa-2x"></i>
+         </a>
+       </li>
+       <li>
+         <a href="https://github.com/JoslynT">
+           <i class="fab fa-github fa-2x"></i>
+         </a>
+       </li>
+       <li>
+         <a href="https://www.facebook.com/Mushishi97">
+           <i class="fab fa-facebook fa-2x"></i>
+         </a>
+       </li>
+       <li>
+         <a href="Joslyn:iceboxjo@gmail.com">
+           <i class="fas fa-envelope fa-2x"></i>
+         </a>
+       </li>
+     </ul>
+   </footer>
+ </div>
 </div>
 </body>
 
