@@ -84,6 +84,15 @@ transform: translate(-50%, -50%);
   float: left;
   width: 32%;
 }
+.picturegrid {
+  background-color: #FFAB81;
+}
+.testcolor {
+  background-color: #6EBFCC;
+}
+.black {
+  background: #575751;
+}
 article.person {
   display: inline-block;
 }
