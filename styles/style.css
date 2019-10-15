@@ -79,6 +79,7 @@ transform: translate(-50%, -50%);
 .biography {
   float: left;
   width: 50%;
+  line-height: 30px;
 }
 .ca {
   float: left;
@@ -86,6 +87,7 @@ transform: translate(-50%, -50%);
 }
 .picturegrid {
   background-color: #FFAB81;
+  padding-left: 100px;
 }
 .testcolor {
   background-color: #6EBFCC;
@@ -158,6 +160,7 @@ p {
   font-weight: medium;
   padding: 20px;
   margin: 10px;
+  line-height: 2;
 }
 html, body {
   margin: 0;
@@ -239,7 +242,7 @@ ul li {
 }
 
 .padding {
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
 }
 
 
@@ -248,16 +251,6 @@ ul li {
 .slogan {
   padding: 50px 100px 50px 100px;
 }
-/* mobile screens */
-@media screen and (max-width: 991px) {
-  .slogan {
-      padding: 0 0 0 50px;
-  }
-  .leftbox {
-      width: 90%;
-  }
-}
-
 .header {
   grid-column: 1/2;
 }
@@ -305,6 +298,22 @@ ul li {
 .side {
   width: 50%;
   float: left;
+}
+/* mobile screens */
+@media screen and (max-width: 991px) {
+  .slogan {
+      padding: 0 0 0 50px;
+  }
+  .leftbox {
+      width: 90%;
+  }
+}
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
 }
 /*.summary, .research, .analysis, .information, .identity, .conclusion {
   display: grid;
