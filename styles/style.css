@@ -5,8 +5,7 @@ box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #6EBFCC;
-  background-image:linear-gradient(to right, #6EBFCC,#DED871,#9DCCD6);
+  background-color: #189EBC;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax 100px, 1fr));
@@ -20,6 +19,7 @@ box-sizing: border-box;
   display: grid;
   grid-row: auto;
   grid-template-columns: repeat(5, 1fr);
+  padding-top:100px;
 }
 .contact {
   text-align: center;
@@ -28,6 +28,9 @@ box-sizing: border-box;
 .note {
   text-align: center;
   padding-bottom: 100px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #9BD8E4;
 }
 .projects {
   padding: 50px 50px 50px 50px;
@@ -47,7 +50,7 @@ box-sizing: border-box;
  margin-left: auto;
  margin-right: auto;
  width:475.42px;
- height:326px;
+ height:276px;
 }
 .story {
    display: block;
@@ -87,14 +90,26 @@ transform: translate(-50%, -50%);
 }
 .picturegrid {
   background-color: #FFAB81;
-  padding-left: 100px;
+  padding: 100px;
 }
 .testcolor {
   background-color: #6EBFCC;
+  padding:100px;
 }
 .black {
   background: #575751;
+  padding:100px;
 }
+.tan {
+  background-color:#BDCFD2;
+    padding: 40px;
+}
+/*.blueblack {
+  width:473px;
+  height:300px;
+  display:block;
+  float: left;
+}*/
 article.person {
   display: inline-block;
 }
@@ -121,12 +136,23 @@ h1, h2{
 h1{
   font-size: 48px;
   font-weight: bold;
+  color: white;
+}
+h3.slogan {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #9BD8E4;
+  padding-top: 0;
+  padding-right: 0;
+  width: 750px;
+  text-align: left;
 }
 h2.subtitle {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   text-align: center;
   font-weight: bold;
+  color: white;
 }
 h3 {
   font-family: 'Poppins', sans-serif;
@@ -177,6 +203,7 @@ img {
 }
 header {
     padding-bottom: 100px;
+    background-color: #189EBC;
 }
 span.flatline {
   width: 53px;
@@ -202,10 +229,10 @@ ul li {
 }
 .navmenu a {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    padding: 30px;
+    font-size: 24px;
+    padding: 40px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .leftbox {
@@ -266,7 +293,7 @@ ul li {
 }
 
 .orangebox {
-  background-color:rgba(255, 171, 129, 0.9);
+  background-color:rgba(178, 198, 197, 0.9);
   text-align: left;
   padding-left: 30px;
   display: inline-block;
@@ -300,13 +327,34 @@ ul li {
   float: left;
 }
 /* mobile screens */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 600px) {
   .slogan {
       padding: 0 0 0 50px;
+      color: white;
   }
   .leftbox {
       width: 90%;
   }
+  .rightbox {
+    display: none;
+  }
+  h3.slogan {
+    padding-right:20px;
+  }
+  .twobox {
+    display: grid;
+    grid-column: 1 /-1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 450px;
+    padding-bottom: 100px;
+    padding-top:100px;
+}
+.phoneimg {
+  width: 340px;
+  height: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Portrait and Landscape */
 @media only screen
