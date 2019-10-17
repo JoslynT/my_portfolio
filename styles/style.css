@@ -53,10 +53,9 @@ box-sizing: border-box;
  height:276px;
 }
 .story {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 18%;
+  display: grid;
+   grid-row: auto;
+   grid-template-columns: repeat(2, 1fr);
 }
 
 .pic {
@@ -79,16 +78,7 @@ transform: translate(-50%, -50%);
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.biography {
-  float: left;
-  width: 50%;
-  line-height: 30px;
-}
-.ca {
-  float: left;
-  width: 32%;
-}
-.picturegrid {
+section.picturegrid {
   background-color: #FFAB81;
   padding: 100px;
 }
@@ -110,8 +100,10 @@ transform: translate(-50%, -50%);
   display:block;
   float: left;
 }*/
-article.person {
-  display: inline-block;
+section.person {
+  display: grid;
+  grid-row: auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 /* General Style */
 
@@ -193,11 +185,6 @@ html, body {
   padding: 0;
   line-height: 1.4;
 }
-
-body {
-  margin: 0 10px;
-}
-
 img {
   width: 100%;
 }
@@ -252,7 +239,7 @@ ul li {
 }
 
 .button {
-  display: inline;
+  display: block;
   background-color: #0076FF;
   border: none;
   color: white;
@@ -260,7 +247,8 @@ ul li {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin-left: 20px;
+  width:200px;
+  margin: 0 auto;
 }
 
 .line {
@@ -356,6 +344,17 @@ ul li {
   margin-left: auto;
   margin-right: auto;
 }
+.story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+  }
+  section.person {display: grid;
+    grid-row: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
 /* Portrait and Landscape */
 @media only screen
   and (min-width: 375px)
