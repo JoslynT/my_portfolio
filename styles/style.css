@@ -428,7 +428,13 @@ ul li {
   width: 50%;
   float: left;
 }
+.row {
+  display: flex;
+}
 
+.column {
+  flex: 50%;
+}
 /* mobile screens */
 @media screen and (max-width: 600px) {
   .slogan {
