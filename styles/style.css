@@ -131,8 +131,6 @@
   .bio {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-left: auto;
-    margin-right: auto;
     width: auto;
   }
 
@@ -454,7 +452,6 @@ ul li {
   }
   article {
     display: grid;
-    grid-template-columns: 80px 1fr 80px;
     grid-column-gap: 10px;
   }
   .blueblack {
