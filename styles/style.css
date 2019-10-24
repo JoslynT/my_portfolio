@@ -45,6 +45,16 @@
   margin: 20px auto;
 }
 
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+
 .role {
   display: grid;
   grid-row: auto;
@@ -198,7 +208,7 @@
   }
 
   p.testbox {
-    width: 350px;
+    width: 300px;
   }
 
   article {
@@ -304,7 +314,7 @@ h3.slogan {
 
 h2.heading {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
+  font-size: 36px;
   text-align: center;
   font-weight: bold;
   color: black;
@@ -321,7 +331,7 @@ h2.subtitle {
 
 h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin: 30px;
@@ -419,6 +429,12 @@ ul li {
     margin: 10px;
     line-height: 2;
   }
+  h2.heading {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 36px;
+  }
   h3.slogan {
     font-size: 36px;
   }
@@ -470,7 +486,7 @@ ul li {
   }
   .leftbox {
     text-align: left;
-    width: 49%;
+    width: 80%;
     display: inline-block;
   }
 
@@ -569,6 +585,9 @@ ul li {
 }
 
 @media (min-width: 1024px){
+  .leftbox {
+    width:49%;
+  }
   .line {
     border-right: 3px solid #009EBE;
     border-left: 3px solid #009EBE;
