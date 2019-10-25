@@ -45,15 +45,6 @@
   margin: 20px auto;
 }
 
- hr {
-   display: inline-block;
-   width: 200px;
-   padding-bottom: 3px;
-   height: 3px;
-   background: #47B6CC;
-   border: none;
-  }
-
 .role {
   display: grid;
   grid-row: auto;
@@ -110,6 +101,7 @@
 
   h3.slogan {
     padding-right: 20px;
+    padding-left: 20px;
   }
 
   .twobox {
@@ -419,6 +411,12 @@ ul li {
   color: white;
   text-decoration:none;
 }
+hr {
+  display: none;
+}
+.boldtext {
+  font-size: 16px;
+}
 @media (min-width: 768px) {
   p {
     font-family: 'Poppins', sans-serif;
@@ -468,6 +466,14 @@ ul li {
   article {
     display: grid;
     grid-column-gap: 10px;
+    grid-template-columns: 80px 1fr 80px;
+  }
+  article.person {
+    display: grid;
+    grid-column-gap: 10px;
+  }
+  p.testbox {
+    width: 100%;
   }
   .blueblack {
     width: 100%;
@@ -475,13 +481,6 @@ ul li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-
-  .bio {
-    display: grid;
-    grid-row: auto;
-    grid-template-columns: repeat(2, 1fr);
   }
   .leftbox {
     text-align: left;
@@ -520,18 +519,14 @@ ul li {
   .footer {
     grid-column: 1/-1;
   }
-
-  .side {
-    width: 50%;
-    float: left;
-  }
   .row {
     display: flex;
   }
 
-  .column {
-    flex: 50%;
+  .boldtext {
+    font-size: 18px;
   }
+
   .phoneimg {
     background-color: #BDCFD2;
     width: 550px;
@@ -581,11 +576,76 @@ ul li {
     background-color: #FFAB81;
     padding: 115px;
   }
+  section.bio {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1026px){
+  section.bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+  .rightbox{
+    text-align: right;
+    width: 20%;
+    display: inline-block;
+  }
   .leftbox {
-    width:49%;
+    width: 70%;
+  }
+  h3.firsttext {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #9BD8E4;
+    padding-left: 70px;
+    text-align: left;
+    font-size: 36px;
+  }
+  .column {
+    padding-right: 80px;
+  }
+  .columnleft {
+    padding-left: 80px;
+  }
+  .paddingabout {
+    padding-left: 110px;
+  }
+  h3.slogan {
+    font-size: 48px;
+    width: 80%;
+    text-align: center;
+    padding-left: 300px;
+  }
+  .bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+
+  hr {
+    display: inline-block;
+    width: 20%;
+    padding-bottom: 3px;
+    background: #9BD8E4;
+    border: none;
+    top: 10px;
+    position: relative;
+   }
+  .story {
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .user{
+    grid-row: 1/3;
+    grid-column: 2;
+  }
+  .alluser{
+    grid-column: 3;
   }
   .line {
     border-right: 3px solid #009EBE;
@@ -668,11 +728,6 @@ ul li {
     grid-auto-rows: 450px;
     padding-bottom: 600px;
     padding-top: 600px;
-  }
-  .rightbox {
-    text-align: right;
-    width: 49%;
-    display: inline-block;
   }
   p.testbox {
     width: 550px;
