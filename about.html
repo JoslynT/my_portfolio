@@ -7,19 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/1d2a87e2d8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-
   <body>
 
     <div class="container">
       <header class="landing">
-        <img src="images/logo.png" alt="logo" style="width:53px; height:53; display:block;margin-left: auto;margin-right: auto;padding-top:20px;">
-        <nav class="navmenu">
+        <img data-aos="zoom-in" src="images/logo.png" alt="logo" style="width:53px; height:53; display:block;margin-left: auto;margin-right: auto;padding-top:20px;">
+        <nav class="navmenu" data-aos="zoom-in-down">
           <hr><a href="about.html" target="_blank">About </a>
           <a href="#projects" target="_blank">Work</a>
           <a href="resume.html" target="_blank">Resume</a>
@@ -27,9 +26,9 @@
         </nav>
         <img src="images/me.png">
         <h1 class="paddingabout">About</h1>
-        <h3 class="slogan">“Living in a world of design, I seek a place to create fluid solutions and stories through my design process.”</h3>
+        <h3 class="slogan" data-aos="zoom-in">“Living in a world of design, I seek a place to create fluid solutions and stories through my design process.”</h3>
         <div class="bio">
-          <div class="columnleft">
+          <div class="columnleft" data-aos="fade-right">
             <p><strong> The Beginnings </strong><br>As a kid, I would love to listen to bedtime stories before dozing off into sleep. It was the excitement within the fairytales of dragons, princesses, and heroes saving the day that intrigued me.
               Throughout school, my imagination would
               drift off and I would be drawing them down on my homework assignment or sometimes even my test papers. Doodling designs on the edge. Reality never kicked in for me, on whether what path I should take towards my future. There was just an
@@ -43,7 +42,7 @@
               a story to share but not a visual way to tell it. I wanted a creative way to explain it. I taught myself video editing, clip by clip, one tutorial after another, I became a decent editor.<br><br> After all my travels along with the things I've
               learned, such as video-editing, are how important stories are; to how they can define who we are. Without them how do we communicate with people about our experiences or life lessons?</p>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-left">
             <p><strong> The Passion </strong><br>Stories create a strong mark on a person. I want to leave a mark on a person and to bring out their emotions <strong class="boldtext">whether tears of joy or tears of sadness, I’ll take it.</strong><br><br>
               Becoming a great storyteller involves a process, you have to include all the important details to keep your audience engaged and delighted.<br><br> <strong>“The best stories are more complete and more comprehensive. They contain more verified
               information from more sources with more viewpoints and expertise. They exhibit more enterprise, more reportorial effort.”</strong><br><br> I googled everything I could to learn about creative story-telling. From the best camera to use, software, color
@@ -58,8 +57,8 @@
         </div>
       </header>
       <footer>
-        <h2 class="subtitle"><hr>    Get In Touch!     <hr></h2>
-        <p class="note"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
+        <h2 class="subtitle" data-aos="zoom-in"><hr>    Get In Touch!     <hr></h2>
+        <p class="note" data-aos="zoom-in"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
         <div class="social">
           <ul>
             <li>
@@ -78,7 +77,7 @@
               </a>
             </li>
             <li>
-              <a href="Joslyn:iceboxjo@gmail.com">
+              <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=iceboxjo@gmail.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=1">
                 <i class="fas fa-envelope fa-2x"></i>
               </a>
             </li>
@@ -86,6 +85,14 @@
       </footer>
     </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+     AOS.init({
+       offset: 120,
+       duration: 2000,
+       easing: 'ease',
+     });
+    </script>
   </body>
 
 </html>

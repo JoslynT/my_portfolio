@@ -7,28 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/1d2a87e2d8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-
   <div class="container">
     <header class="landing">
-      <img src="images/logo.png" alt="logo" style="width:53px; height:53; display:block;margin-left: auto;margin-right: auto;padding-top:20px;">
-      <nav class="navmenu">
+      <img data-aos="zoom-in" src="images/logo.png" alt="logo" style="width:53px; height:53; display:block;margin-left: auto;margin-right: auto;padding-top:20px;">
+      <nav class="navmenu" data-aos="zoom-in-down">
       <hr> <a href="about.html" target="_blank">About </a>
         <a href="#projects" target="_blank">Work</a>
         <a href="resume.html" target="_blank">Resume</a>
         <a href="contact.html" target="_blank">Contact</a> <hr>
       </nav>
       <div class="leftbox">
-        <h1 class="slogan"> Hello.</h1>
-        <h3 class="firsttext">My name is Joslyn Tran, I’m a UX designer based in San Diego.
+        <h1 class="slogan" data-aos="fade-right"> Hello.</h1>
+        <h3 class="firsttext"  data-aos="fade-up">My name is Joslyn Tran, I’m a UX designer based in San Diego.
           I love creating stories and solutions through design.</h3>
       </div>
-      <div class="rightbox"> <img src="images/mee.png" style="width:252.07px;height:189.99px;display: block;margin-left: auto;margin-right: auto;"></div>
+      <div class="rightbox" data-aos="fade-left"> <img src="images/mee.png" style="width:252.07px;height:189.99px;display: block;margin-left: auto;margin-right: auto;"></div>
 
     </header>
     <section class="second">
@@ -49,34 +49,50 @@
       </div>
     </section>
     <footer>
-      <h2 class="subtitle">Get In Touch!</h2>
-      <p class="note"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
+      <h2 class="subtitle" data-aos="zoom-in">Get In Touch!</h2>
+      <p class="note" data-aos="zoom-in"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
       <div class="social">
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/joslyn-tran-5a5674139">
+              <span style="color: black;">
               <i class="fab fa-linkedin fa-2x"></i>
+            </span>
             </a>
           </li>
           <li>
             <a href="https://github.com/JoslynT">
+              <span style="color: black;">
               <i class="fab fa-github fa-2x"></i>
+            </span>
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/Mushishi97">
+              <span style="color: black;">
               <i class="fab fa-facebook fa-2x"></i>
+            </span>
             </a>
           </li>
           <li>
-            <a href="Joslyn:iceboxjo@gmail.com">
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=iceboxjo@gmail.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=1">
+              <span style="color: black;">
               <i class="fas fa-envelope fa-2x"></i>
+            </span>
             </a>
           </li>
         </ul>
     </footer>
   </div>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init({
+     offset: 120,
+     duration: 2000,
+     easing: 'ease',
+   });
+  </script>
 </body>
 
 </html>

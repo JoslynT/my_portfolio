@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Portfolio | Joslyn</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    <navbar>
-        <a href="index.html"> Home </a>
-        <a href="about.html">About </a>
-        <a href="resume.html">Resume</a>
-        <a href="#">Contact</a>
-   </navbar>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1> Joslyn Tran </h1>
-      <p class="slogan"> Hello and Welcome.
-My name is Joslyn Tran, I’m a UX designer based in San Diego.
-I love creating stories and solutions through design experienes.</p>
-    </header>
-    <section>
-  <h1>Projects</h1>
-  <article>
-    <h1>E-box</h1>
-    <p class="description"> Upload, organize and share personal files online and offline?
-Yes, please! Offering a simple way to showcase, categorize, and collaborate on projects.</p>
-  </article>
-  <article>
-    <h1>Project name</h1>
-  </article>
 
-</section>
+<head>
+  <meta charset="utf-8">
+  <title> Portfolio | Joslyn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/1d2a87e2d8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+  <body>
+
+    <div class="container">
+      <header class="landing">
+        <img data-aos="zoom-in" src="images/logo.png" alt="logo" style="width:53px; height:53; display:block;margin-left: auto;margin-right: auto;padding-top:20px;">
+        <nav class="navmenu" data-aos="zoom-in-down">
+          <hr><a href="about.html" target="_blank">About </a>
+          <a href="#projects" target="_blank">Work</a>
+          <a href="resume.html"  target="_blank">Resume</a>
+          <a href="contact.html" target="_blank">Contact</a><hr>
+        </nav>
+        <img src="images/me.png">
+        <h1 class="paddingabout">Contact</h1>
+        <h3 class="slogan" data-aos="zoom-in">“Living in a world of design, I seek a place to create fluid solutions and stories through my design process.”</h3>
+        <a href="images/resume.pdf">ok</a>
+      </header>
+      <footer>
+        <h2 class="subtitle" data-aos="zoom-in"><hr>    Get In Touch!     <hr></h2>
+        <p class="note" data-aos="zoom-in"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/joslyn-tran-5a5674139">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/JoslynT">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Mushishi97">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=iceboxjo@gmail.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=1">
+                <i class="fas fa-envelope fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+      </footer>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+     AOS.init({
+       offset: 120,
+       duration: 2000,
+       easing: 'ease',
+     });
+    </script>
   </body>
+
 </html>
