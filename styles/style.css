@@ -161,6 +161,10 @@
   .lowfi {
     width: 340px;
     height: 244px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 
   .highfi {
@@ -264,6 +268,9 @@ section.picturegrid {
   padding: 20px 20px 20px 30px;
 }
 
+.paddingabout {
+  padding: 20px;
+}
 section.person {
   display: grid;
   grid-row: auto;
@@ -301,6 +308,13 @@ h3.slogan {
   text-align: left;
   margin:0;
   font-size: 24px;
+}
+h3.firsttext {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #9BD8E4;
+  padding-left: 20px;
+  text-align: left;
 }
 
 h2.heading {
@@ -417,6 +431,13 @@ hr {
 .boldtext {
   font-size: 16px;
 }
+
+.paddingcontact {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 768px) {
   p {
     font-family: 'Poppins', sans-serif;
@@ -501,7 +522,7 @@ hr {
 
   /* home */
   .slogan {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px 50px 50px;
   }
 
   .header {
@@ -584,6 +605,9 @@ hr {
 }
 
 @media (min-width: 1026px){
+  .slogan {
+    padding: 50px 100px 50px 100px;
+  }
   section.bio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
