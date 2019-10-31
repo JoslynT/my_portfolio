@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/1d2a87e2d8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -25,9 +26,33 @@
           <a href="contact.html" target="_blank">Contact</a><hr>
         </nav>
         <img src="images/me.png">
-        <h1 class="paddingcontact">Contact</h1>
-        <h3 class="slogan" data-aos="zoom-in">“Living in a world of design, I seek a place to create fluid solutions and stories through my design process.”</h3>
+        <h3 class="slogan" data-aos="zoom-in">“I'm glad you're here, let's chat!”</h3>
+        <section>
+          <body class="contactBody">
+            <div class="wrapper">
+            <div class="title">
+
+
+            </div>
+
+
+            <form class="form" action="mailto:iceboxjo@gmail.com" data-aos="zoom-up">
+              <input type="text" class="name entry " placeholder="Your Name"/>
+
+              <input type="text" class="email entry" placeholder="Email"/>
+
+              <textarea class="message entry" placeholder="Message"></textarea>
+
+              <button class="submit entry" onclick="thanks()">Submit</button>
+            </form>
+
+            <div class="shadow"></div>
+          </div>
+
+
+  </section>
       </header>
+
       <footer>
         <h2 class="subtitle" data-aos="zoom-in"><hr>    Get In Touch!     <hr></h2>
         <p class="note" data-aos="zoom-in"> Thanks for stopping by! I hope you enjoyed my work. If you’ll like, feel free to contact me. </p>
@@ -73,6 +98,7 @@
        easing: 'ease',
      });
     </script>
+    <script src="app.js"></script>
   </body>
 
 </html>
