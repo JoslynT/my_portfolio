@@ -290,12 +290,28 @@ section.picturegrid {
 .alluser {
   display: none;
 }
+.finaldesign {
+  background: #575741;
+  padding: 20px 20px 20px 20px;
+  display: grid;
+  grid-row: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.mobilescreen {
+  width: 100%;
+  height: 100%
+}
 section.person {
   display: grid;
   grid-row: auto;
   grid-template-columns: repeat(1, 1fr);
 }
 
+.desktop {
+  background-color: #FFAB81;
+  padding: 20px 20px 20px 20px;
+}
 /* General Style */
 
 article>* {
@@ -608,6 +624,9 @@ hr {
     }
   }
 @media (min-width: 768px) {
+  .extrasecond {
+    padding: 100px 100px;
+  }
   .comp {
     padding: 100px 100px;
   }
@@ -652,7 +671,10 @@ hr {
   .story {
     display: grid;
     grid-row: auto;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .user {
+    padding-left: 100px;
   }
   .tan {
     background-color: #BDCFD2;
@@ -793,7 +815,7 @@ hr {
   article {
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
   }
   article.person {
     display: grid;
@@ -883,8 +905,7 @@ hr {
   }
 
   .extrasecond {
-    grid-column: 10 / 3 ;
-    padding-left: 70px;
+    grid-column: 10 / 4 ;
   }
 
   .role {
@@ -958,6 +979,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 450px;
   }
+
 
   p.testbox {
     width: 488px;
