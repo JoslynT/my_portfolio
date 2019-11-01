@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/1d2a87e2d8.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -83,9 +84,12 @@
         <h3>User Research</h3>
         <p>To understand what the audience needs, I created a user research survey focused on how people browsed the internet and saved content, why users used the services that they used and common likes and dislike about the current services
           they use. </p>
-        <p>why users used the services that they used and common likes and dislikes about the current services they use.
-          Features do you use the most?
+        <p>Features do you use the most?<br>
           What are some frustrations you have experienced?</p>
+          <section>
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </section>
+        <a href="https://forms.gle/NxVuGWRf3tNk2Lp8A" target="_blank" class="button">View User Survey</a>
         <p>I summarized the data and it revealed that users were still having some frustrations from organizing to saving content. Why would big name brand services still have frustrations with their services? This is an opportunity where I can
           create
           solutions for users who still have frustrations providing a better experience for users. </p>
@@ -93,7 +97,7 @@
       </article>
     </section>
     <section class="bio">
-      <div>
+      <div class="extrasecond">
         <img src="images/guy.png" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
         <strong class="padding">Biography</strong>
         <p>Jerry grew up fishing most of his childhood, to this day he finds peace of hearing the sounds of wildlife and running waters. He doesn’t go as often anymore since he now has a newborn child to raise and a lovely wife to take
@@ -110,7 +114,7 @@
         <p>Jerry currently uses multiple storage platforms to store his personal and work-related files. He needs to create and access his files on his devices as he always needs to access his files where ever he is. Jerry is a very organized
           individual and needs all his files to be the same. Sometimes frustration occurs with the process of searching for his files.</p>
       </div>
-      <div>
+      <div class="extrasecond">
         <img src="images/girl.png" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
         <strong class="padding">Biography</strong>
         <p>Fiona’s dream is to travel the world. In the meantime, while she attends her state college for a degree in culinary, she takes her of her 3 kittens. Her life is busy as it gets for a student. Waking up early to prepare for the day,
@@ -139,7 +143,7 @@
     <section class="person">
       <div>
         <img src="images/dropbox.png" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
-        <strong class="padding">Strengths</strong>
+      <div class="comp">  <strong class="padding">Strengths</strong>
         <p>High user base
           Multi-language support<br>
           Available on multiple platforms<br>
@@ -160,10 +164,11 @@
           Changes in consumer tastes<br>
           Availability of substitute products<br>
           Security and privacy issues </p>
+        </div>
       </div>
       <div>
         <img src="images/googledrive.jpg" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
-        <strong class="padding">Strengths</strong>
+        <div class="comp"><strong class="padding">Strengths</strong>
         <p>Integration/API<br>
           Collaboration<br>
           Creating documents on the browser or mobile device<br>
@@ -182,10 +187,11 @@
         <strong class="padding"> Threats </strong>
         <p>Intense Competition<br>
           Need rapid updates of functionality </p>
+        </div>
       </div>
       <div>
         <img src="images/office.png" style="width:150px;height:150px;display: block;margin-left: auto;margin-right: auto;margin-bottom:50px;margin-top:50px;">
-        <strong class="padding">Strengths</strong>
+        <div class="comp"><strong class="padding">Strengths</strong>
         <p>Professional quality control over docs<br>
           Integration (Dropbox) </p>
         <strong class="padding"> Weakness </strong>
@@ -202,6 +208,7 @@
         <p>Difficult to choose this software over other well-known applications<br>
           Security and privacy issues<br>
           Intense competition </p>
+        </div>
       </div>
     </section>
     <section class="information">
@@ -262,6 +269,7 @@
         <h3>Organizing</h3>
         <img class="pic" src="images/Organize.jpg">
       </article>
+      <a href="https://drive.google.com/file/d/1qzv1JUrt141euk5okYU6Dy4NG80TQg6n/view?usp=sharing" target="_blank" class="button">View User Flows</a>
       <article class="wireframes">
         <h3>Paper and Wireframes</h3>
         <p>After sketching a few iterations from the user flow, I started to wireframe in Figma. The wireframes were used to create a clickable prototype to test the usability of my ideas for feasibility. </p>
@@ -289,6 +297,7 @@
         <p>After going through feedback collected from testing and a few iterations later, here is what it looks like. The goal was always keeping a simple homepage that was easily navigatable. Along with a modern and humanistic feel. Taking a look
           at
           the refined wireframe I added all suggestions from users, such as implementing icons instead of big buttons, with a drop-down button to utilize whitespace. Added a consistent look overall with icon choices, color choice, and layout.</p>
+       <a href="https://drive.google.com/drive/folders/1GqTuEga3lDiw9ELe5RAxOTspyg2JQ8Wg?usp=sharing" target="_blank" class="button">User Testings</a>
       </article>
       <div class="testcolor">
         <img class="highfi" src="images/highwire.png">
@@ -299,9 +308,9 @@
           After testing, the result was users liked the original design best.</p>
       </article>
       <div class="black">
-        <img class="abtest" src="images/testone.png">
-        <img class="abtest" src="images/testtwo.png">
-        <img class="abtest" src="images/testthree.png">
+        <div><h3> 0% </h3><img class="abtest" src="images/testone.png"></div>
+        <div><h3> 13% </h3><img class="abtest" src="images/testtwo.png"></div>
+        <div><h3> 23% </h3><img class="abtest" src="images/testthree.png"></div>
       </div>
     </section>
     <section class="identity">
@@ -378,6 +387,46 @@
      easing: 'ease',
    });
   </script>
+  <script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['locating old files', 'not enough space', 'collaboration', 'IDK how to use', ],
+        datasets: [{
+            label: '# of frustrations',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
 </body>
 
 </html>

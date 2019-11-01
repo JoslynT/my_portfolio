@@ -223,7 +223,6 @@
   article {
     display: grid;
     grid-template-columns: auto;
-    grid-column-gap: 10px;
   }
 
 
@@ -284,6 +283,12 @@ section.picturegrid {
 
 .paddingabout {
   padding: 20px;
+}
+.flows {
+  display: none;
+}
+.alluser {
+  display: none;
 }
 section.person {
   display: grid;
@@ -492,7 +497,7 @@ hr {
     border-bottom: 5px solid #B2175F;
     color: white;
     width:80%;
-    height: 60px;
+    height: 15%
   }
 
   ::-webkit-input-placeholder{
@@ -509,8 +514,9 @@ hr {
   .email {
     background-color: #7239C1;
     border-bottom: 5px solid #502789;
-    height:60px;
     width:80%;
+    height: 15%
+
   }
   .email:hover{
     background-color: #7239C1;
@@ -602,6 +608,10 @@ hr {
     }
   }
 @media (min-width: 768px) {
+  .comp {
+    padding: 100px 100px;
+  }
+
   .form {
     width: 65%;
   }
@@ -795,7 +805,7 @@ hr {
   }
   section.bio {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     width: auto;
   }
   .rightbox{
@@ -856,6 +866,7 @@ hr {
   }
   .alluser{
     grid-column: 3;
+    display: block;
   }
   .line {
     border-right: 3px solid #009EBE;
@@ -870,6 +881,12 @@ hr {
     grid-column: 2 / 3 ;
     padding-left: 60px;
   }
+
+  .extrasecond {
+    grid-column: 10 / 3 ;
+    padding-left: 70px;
+  }
+
   .role {
     display: grid;
     grid-row: auto;
@@ -884,6 +901,10 @@ hr {
   .black {
     background: #575751;
     padding: 100px;
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
 
   .phoneimg {
@@ -914,8 +935,8 @@ hr {
     height: 515px;
   }
   .abtest {
-    width: 850px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     display: block;
     margin-left:
       auto;
@@ -937,7 +958,8 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 450px;
   }
+
   p.testbox {
-    width: 550px;
+    width: 488px;
   }
 }
