@@ -80,10 +80,31 @@
   color: #9BD8E4;
 }
 .second {
-  background-image: url(../images/wallpaper.jpg);
-  height: 100%;
-  background-size: cover;
+  content: url(../images/boxiphone.png);
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: shadow 1.5s infinite;
+  animation: bounce 1.5s infinite;
 }
+
+.laptop {
+  content: url(../images/vietlaptop.png);
+  width:95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: shadow 1.5s infinite;
+  animation: bounce 1.8s infinite;
+}
+
+.secondbox {
+  display: grid;
+  grid-column: 1 /-1;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 .orangebox {
   background-color: rgba(178, 198, 197, 0.9);
   text-align: left;
@@ -811,9 +832,19 @@ hr {
     grid-template-columns: repeat(1, 1fr);
     width: auto;
   }
+  .secondbox {
+    display: grid;
+    grid-column: 1 /-1;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1026px){
+
+  h2.subtitle {
+    padding-top: 200px;
+  }
+
   article.flows {
     display: grid;
     grid-template-columns: 80px 1fr 80px;
@@ -981,6 +1012,13 @@ hr {
     margin-right: auto;
   }
   .twobox {
+    display: grid;
+    grid-column: 1 /-1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 450px;
+  }
+
+  .secondbox {
     display: grid;
     grid-column: 1 /-1;
     grid-template-columns: repeat(2, 1fr);
